@@ -85,12 +85,12 @@ func TestDivide(t *testing.T) {
 	}
 }
 
-// func TestDivideInvalid(t *testing.T) {
-// 	t.Parallel()
+func TestDivideInvalid(t *testing.T) {
+	t.Parallel()
 
-// 	_, err := calculator.Divide(1, 0)
+	_, err := calculator.Divide(1, 0)
 
-// 	if err == nil {
-// 		t.Error("want no error for valid input, got nil")
-// 	}
-// }
+	if err == nil {
+		t.Error("want no error for invalid input, got nil")
+	}
+}
